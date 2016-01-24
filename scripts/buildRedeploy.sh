@@ -1,8 +1,8 @@
 #!/bin/sh
 
 echo "************ UNDEPLOYING *******************"
-asadmin undeploy library
+./../../../../../opt/devel/glassfish3/bin/asadmin undeploy musicstore
 echo "************ BUILDING **********************"
 mvn package
 echo "************ DEPLOYING *********************"
-asadmin deploy target/library.war
+./../../../../../opt/devel/glassfish3/bin/asadmin deploy target/musicstore.war

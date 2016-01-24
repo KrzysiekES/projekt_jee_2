@@ -1,90 +1,87 @@
-package com.library.domain;
-
-import org.codehaus.jackson.annotate.JsonIgnore;
+package com.league.domain;
 
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.io.Serializable;
-import java.sql.Date;
-import java.util.List;
+import java.util.Date;
 
 @Entity
-@NamedQueries({
-        @NamedQuery(name = "player.all", query = "Select p from Player "),
-        @NamedQuery(name = "book.byTitle", query = "Select p from Player p where p.position = :position")
+@Table (name = "Player")
+@NamedQueries({ 
+	@NamedQuery(name = "player.getAll", query = "Select p from Player p"),
+	@NamedQuery(name = "player.getByIdClub", query = "Select p from Player p where p.club = :idClub")
 })
-@Table(name = "Player")
-@XmlRootElement
+
 public class Player {
-	
-	
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long playerId;
+
+	private Long idPlayer;
+	private String firstName;
+	private String lastName;
+	private int shirtNumber;
+	private String position;
+    private Date bornDate;
+  
+  
+    private Club club;
+  
+    //Konstruktory
+	 public Player() {
+	}
+
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	public Long getIdPlayer() {
+		return idPlayer;
+	}
+	public void setIdPlayer(Long idPlayer) {
+		this.idPlayer = idPlayer;
+	}
+  
+    public String getFirstName(){
+        return firstName; 
+    }
+    public void setFirstName(String firstName){
+      this.firstName = firstName;
+    }
     
-    
-	//private int clubId;
-    @Column(nullable = false)
-	private String firstName = "unknown";
-    @Column(nullable = false)
-	private String lastName = "unknown";
-    @Column(nullable = false)
-	private String position = "unknown";
-    @Column(nullable = false)
-	private int number = 0;
+    public String getLastName(){
+        return lastName; 
+    }
+    public void setLastName(String lastName){
+      this.lastName = lastName;
+    }
 	
-    
+    public int getShirtNumber(){
+        return shirtNumber; 
+    }
+    public void setShirtNumber(int shirtNumber){
+      this.shirtNumber = shirtNumber;
+    }
+  
+    public String getPosition(){
+        return position; 
+    }
+    public void setPosition(String position){
+      this.position = position;
+    }
+
+  	@Temporal(TemporalType.DATE)
+	public Date getBornDate() {
+		return bornDate;
+	}
+  
+    public void setBornDate(Date bornDate){
+        this.bornDate = bornDate; 
+    }
+
+	@ManyToOne
+	@JoinColumn(name = "idClub")
+	public Club getClub() {
+	    return club;
+	}
+  
+	public void setClub(Club club) {
+      this.club = club;
+    }
 	
-	public Player() {
-		super();
-	}
-	//Konstruktor
-	public Player(long playerId, int clubId, String firstName, String lastName, String position, int number) {
-		super();
-		this.setPlayerId(playerId);
-		this.setClubId(clubId);
-		this.firstName = firstName;
-		this.setLastName(lastName);
-		this.setPosition(position);
-		this.setNumber(number);
-	}
-	//Setters & Getters
-	public String getFirstName() {
-		return firstName;
-	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public int getNumber() {
-		return number;
-	}
-	public void setNumber(int number) {
-		this.number = number;
-	}
-	public String getPosition() {
-		return position;
-	}
-	public void setPosition(String position) {
-		this.position = position;
-	}
-	public long getPlayerId() {
-		return playerId;
-	}
-	public void setPlayerId(long playerId) {
-		this.playerId = playerId;
-	}
-	/*
-	public int getClubId() {
-		return clubId;
-	}
-	public void setClubId(int clubId) {
-		this.clubId = clubId;
-	}*/
 
 }
