@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <title>Usuwanie Piłkarza</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="../../js/player/deletePlayer.js"></script>
+</head>
+<body>
+  <div class="row text-center showPage">
+    <h2>Dodaj Piłkarza</h2>
+    <ul>
+      <li><a href="Player.html" class="button">Piłkarze</a></li>
+      <li><a href="../Club/Club.html" class="button">Kluby</a></li>
+    </ul>
+  </div>
+
+  <div class="addSection">
+    <input type="text" id="idPlayerID" name="idPlayer" style="visibility: hidden;"/>
+    <table class="operationtable">
+        <tr class='warningheader'>
+            <td colspan='2'>Usuwanie Piłkarza</td>
+        </tr>
+        <tr>
+            <td>ID:</td>
+            <td id="id"></td>
+        </tr>
+        <tr>
+            <td>imie:</td>
+            <td id="firstName"></td>
+        </tr>
+        <tr>
+            <td>Nazwisko:</td>
+            <td id="lastName"></td>
+        </tr>
+        <tr>
+            <td>nr:</td>
+            <td id="shirtNumber"></td>
+        </tr>
+        <tr>
+            <td>pozycja:</td>
+            <td id="position"></td>
+        </tr>
+        <tr>
+            <td>Data urodzenia:</td>
+            <td id="bornDate"></td>
+        </tr>
+        <tr>
+            <td>Klub:</td>
+            <td id="club"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value=" USUŃ " align="right" class="addSuccesC"></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>

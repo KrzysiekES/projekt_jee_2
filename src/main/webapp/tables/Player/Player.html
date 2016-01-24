@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <title>Piłkarze</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="../../js/player/showPlayers.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="row text-center showPage">
+    <h2>Lista Piłkarzy</h2>
+    <ul>
+      <li><a href="Player.html" class="button">Piłkarze</a></li>
+      <li><a href="../Club/Club.html" class="button">Kluby</a></li>
+      <li><a href="addPlayer.html" class="button buttonAdd">Dodaj Piłkarza</a></li>
+    </ul>
+  </div>
+
+  <table class="presentationTable" id="presentationTable" align="center">
+    <tr class="tableheader" id="tableheader">
+      <td>Id</td>
+      <td>Imię</td>
+      <td>Nazwisko</td>
+      <td>Nr koszulki</td>
+      <td>Pozycja</td>
+      <td>Data urodzenia</td>
+      <td>Klub</td>
+    </tr>
+    <div id="tablePlaceholder"></div>
+  </table>
+</body>
+</html>

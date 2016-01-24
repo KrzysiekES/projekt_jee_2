@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <title>Edycja Piłkarza </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="../../js/player/updatePlayers.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<body>
+  <div class="row text-center showPage">
+    <h2>Edycja Piłkarza</h2>
+    <ul>
+      <li><a href="Player.html" class="button">Piłkarze</a></li>
+      <li><a href="../Club/Club.html" class="button">Kluby</a></li>
+    </ul>
+  </div>
+
+  <div class="addSection">
+    <input type="text" id="idPlayerID" name="idPlayer" style="visibility: hidden;"/>
+    <table class="operationtable">
+      <tr class='tableheader'>
+        <td colspan='2'>Dodawanie zamówienia</td>
+      </tr>
+      <tr>
+        <td>ID:</td>
+        <td><input type="text" name="idPlayer" id="playerID" /></td>
+      </tr>
+      <tr>
+        <td>club:</td>
+        <td>
+          <select name="club" id="clubID">
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>imie:</td>
+        <td><input type="text" name="firstName" id="firstNameID" /></td>
+      </tr>
+      <tr>
+        <td>nazwisko:</td>
+        <td><input type="text" name="lastName" id="lastNameID" /></td>
+      </tr>
+      <tr>
+        <td>nr koszulki:</td>
+        <td><input type="text" name="shirtNumber" id="shirtNumberID" /></td>
+      </tr>
+      <tr>
+        <td>pozycja:</td>
+        <td><input type="text" name="position" id="positionID" /></td>
+      </tr>
+      <tr>
+        <td>Data urodzenia:</td>
+        <td><input id="bornDateID" type="text" name="bornDate" /></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value=" DODAJ " align="right" id="addSucces"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
