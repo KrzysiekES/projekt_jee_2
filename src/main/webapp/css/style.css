@@ -1,0 +1,58 @@
+
+body {
+  background: url(../img/dirty_old_shirt.png); /*from subtlePatterns*/
+}
+
+.mainPage {
+  margin-top: 300px; 
+}
+
+.mainPage h2 {
+  color: #fff; 
+}
+
+.mainPage ul,.showPage ul {
+  list-style: none; 
+}
+
+.mainPage ul li a, .showPage ul li a {
+  width: 300px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+table {
+  margin: 0 auto;
+  text-align: center; 
+}
+table tr {
+  padding: 15px; 
+}
+table tr td {
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.showPage h2 {
+ color: #fff; 
+}
+.buttonAdd {
+ background-color: darkgreen; 
+}
+
+#addSucces,.addSuccesC,.back {
+  padding: 15px 30px;
+  border: 3px blue;
+  background-color: green;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 125px;
+  cursor: pointer;
+}
+#addSucces:hover,.addSuccesC :hover,.back:hover {
+ transition: all .3s ease-out;
+ background-color: darkgreen;
+}
+.addSection {
+  margin-bottom: 50px; 
+}

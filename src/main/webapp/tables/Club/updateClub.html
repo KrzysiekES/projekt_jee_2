@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <title>Update klubu</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="../../js/club/updateClub.js"></script>   
+</head>
+<body>
+  <div class="row text-center showPage">
+    <h2>Pokaż Klub</h2>
+    <ul>
+      <li><a href="Player.html" class="button">Piłkarze</a></li>
+      <li><a href="../Club/Club.html" class="button">Kluby</a></li>
+    </ul>
+  </div>
+
+  <div class="addSection">
+    <input type="text" id="idCustomerID" name="idCustomer" style="visibility: hidden;"/>
+    <table class="operationtable">
+        <tr class='tableheader'>
+            <td colspan='2'>Edycja klienta</td>
+        </tr>
+        <tr>
+            <td>ID:</td>
+            <td><input type="text" class="idClubC" name="idClub"/></td>
+        </tr>
+        <tr>
+            <td>nazwa:</td>
+            <td><input type="text" class="nameC" name="name" /></td>
+        </tr>
+        <tr>
+            <td>Właściciel:</td>
+            <td><input type="text" class="ownerC" name="owner" /></td>
+        </tr>
+        <tr>
+            <td>Maisto:</td>
+            <td><input type="text" class="cityC" name="city" /></td>
+        </tr>
+        <tr>
+            <td>pojemnosc:</td>
+            <td><input type="text" class="capacityC" name="capacity" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" class="addSuccesC" value=" ZAPISZ ZMIANY " align="right"></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>

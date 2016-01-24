@@ -3,13 +3,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="../../css/foundation.css">
     <link rel="stylesheet" type="text/css" href="../../css/style.css">
-    <title>Podgląd</title>
+    <title>Podgląd klubu</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="../../js/player/readPlayer.js"></script>
+    <script src="../../js/club/readClub.js"></script>
 </head>
 <body>
   <div class="row text-center showPage">
-    <h2>Pokaż Piłkarza</h2>
+    <h2>Pokaż Klub</h2>
     <ul>
       <li><a href="Player.html" class="button">Piłkarze</a></li>
       <li><a href="../Club/Club.html" class="button">Kluby</a></li>
@@ -17,38 +17,30 @@
   </div>
   
   <div class="addSection">
-    <form action="Player.html" method="post">
+    <form action="Club.html" method="post">
       <table class="operationtable">
           <tr class='tableheader'>
-              <td colspan='2'>Podgląd zamówienia</td>
+              <td colspan='2'>Podgląd klienta</td>
           </tr>
           <tr>
               <td>ID:</td>
               <td id="id"></td>
           </tr>
           <tr>
-              <td>imie:</td>
-              <td id="firstName"></td>
+              <td>nazwa:</td>
+              <td id="name"></td>
           </tr>
           <tr>
-              <td>Nazwisko:</td>
-              <td id="lastName"></td>
+              <td>właściciel:</td>
+              <td id="owner"></td>
           </tr>
           <tr>
-              <td>nr:</td>
-              <td id="shirtNumber"></td>
+              <td>Miasto:</td>
+              <td id="city"></td>
           </tr>
-          <tr>
-              <td>pozycja:</td>
-              <td id="position"></td>
-          </tr>
-          <tr>
-              <td>Data urodzenia:</td>
-              <td id="bornDate"></td>
-          </tr>
-          <tr>
-              <td>Klub:</td>
-              <td id="club"></td>
+                  <tr>
+              <td>pojemność:</td>
+              <td id="capacity"></td>
           </tr>
           <tr>
               <td colspan="2"><input type="submit" value=" POWRÓT " align="right" class="back"></td>

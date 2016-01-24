@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <title>Usuwanie klubu</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="../../js/club/deleteClub.js"></script>
+</head>
+<body>
+  <div class="row text-center showPage">
+    <h2>Usuń Piłkarza</h2>
+    <ul>
+      <li><a href="Player.html" class="button">Piłkarze</a></li>
+      <li><a href="../Club/Club.html" class="button">Kluby</a></li>
+    </ul>
+  </div>
+  
+  <div class="addSection">
+    <input type="text" id="idClubID" name="idClub" style="visibility: hidden;"/>
+    <table class="operationtable">
+        <tr class='warningheader'>
+            <td colspan='2'>Usuwanie klubu</td>
+        </tr>
+        <tr>
+            <td>ID:</td>
+            <td id="id"></td>
+        </tr>
+        <tr>
+            <td>Nazwa:</td>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <td>Właściciel:</td>
+            <td id="owner"></td>
+        </tr>
+        <tr>
+            <td>miasto:</td>
+            <td id="city"></td>
+        </tr>
+        <tr>
+            <td>pojemnosc:</td>
+            <td id="capacity"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value=" USUŃ " align="right" class="addSuccesC"></td>
+        </tr>
+    </table>
+  </div>
+</body>
+</html>

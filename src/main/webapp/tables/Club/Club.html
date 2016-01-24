@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../../css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <title>Kluby</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="../../js/club/showClubs.js"></script>
+</head>
+<body>
+   <div class="row text-center showPage">
+    <h2>Lista Klubów</h2>
+    <ul>
+      <li><a href="../Player/Player.html" class="button">Piłkarze</a></li>
+      <li><a href="Club.html" class="button">Kluby</a></li>
+      <li><a href="addClub.html" class="button buttonAdd">Dodaj Klub</a></li>
+    </ul>
+  </div>
+  
+  <table class="presentationTable" id="presentationTable">
+    <tr class="tableheader" id="tableheader">
+      <td>Id</td>
+      <td>Nazwa</td>
+      <td>Właściciel</td>
+      <td>Miasto</td>
+      <td>Pojemność</td>
+    </tr>
+    <div id="tablePlaceholder"></div>
+  </table>
+</body>
+</html>
