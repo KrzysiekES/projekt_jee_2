@@ -1,21 +1,15 @@
-package com.club;
+package com.league;
 
 import com.league.domain.Club;
 
 import java.util.List;
 
+public interface ClubDAO {
 
-public interface ClubDAO
-{
-
+    Club addClub(Club club);
+    void deleteClub(Club club);
+    Club updateClub(Club club);
     List<Club> getAllClubs();
-    Club getClubById(Club Club);
-    Club getClubByIdWithClubsAuthors(Club club);
-    Club getClubByIdWithPlubs(Club club);
-    List<Club> getClubByPlayers(String players);
-    Club updateClub(Club Club);
-    void deleteClub(Club Club);
-    Club addClub(Club Club);
-
-
+    Club getClubByID(Long id);
+  ///  List<Club> getAllClubsWithPlayers();
 }

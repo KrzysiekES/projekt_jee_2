@@ -1,4 +1,5 @@
-package com.library.rest;
+package com.league.rest;
+
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 

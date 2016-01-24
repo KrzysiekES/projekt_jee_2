@@ -1,17 +1,17 @@
 package com.league;
 
-import com.league.domain.Player;
+import com.league.domain.*;
 
 import java.util.List;
 
+public interface PlayerDAO {
 
-public interface PlayerDAO
-{
-    List<Player> getAllPlayers();
-    Player getPlayerById(Player player);
-    Player getPlayerByIdWithBooksPlayers(Player player);
-    List<Player> getPlayerByPosition(String position);
-    Player updatePlayer(Player player);
-    void deletePlayer(Player player);
     Player addPlayer(Player player);
+    void deletePlayer(Player player);
+    Player updatePlayer(Player player);
+    List<Player> getAllPlayers();
+    Player getPlayerByID(Long id);
+  //  List<Player> getPlayersByClubsID(Club club);
+
+
 }
